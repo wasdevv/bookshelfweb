@@ -1,0 +1,12 @@
+<div class="text-center">
+  <p>Welcome to my <strong>Bookshelf.</strong></p>
+</div>
+<br>
+<br>
+<br>
+<div class="">
+  <% @books.each do |book| %>
+    <p><%= link_to book.title, book %> </p>
+    <p><%= book.author%></p>
+  <% end %>
+</div>
